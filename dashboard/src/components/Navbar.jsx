@@ -1,12 +1,13 @@
 import { Box, Flex, HStack, Text } from '@chakra-ui/react';
 import { Link, useLocation } from 'react-router-dom';
-import { FiHome, FiClock, FiSmile, FiSearch } from 'react-icons/fi';
+import { FiHome, FiClock, FiSmile, FiSearch, FiStar } from 'react-icons/fi';
 
 const NAV_ITEMS = [
   { label: 'Overview', path: '/', icon: FiHome },
   { label: 'Timeline', path: '/timeline', icon: FiClock },
   { label: 'Sentiment Analysis', path: '/emotions', icon: FiSmile },
   { label: 'Document Search', path: '/search', icon: FiSearch },
+  { label: 'Recommendations', path: '/recommendations', icon: FiStar },
 ];
 
 export default function Navbar() {
